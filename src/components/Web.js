@@ -1,6 +1,7 @@
 import React from 'react';
 import PortfolioImage from '../images/web/jpeg/portfolio.jpg';
 import EsolnetImage from '../images/web/jpeg/esolnet.jpg';
+import ArtistoImage from '../images/web/jpeg/artisto.jpg';
 import style from './Web.scss';
 
 const Home = () => {
@@ -16,6 +17,9 @@ const Home = () => {
         </a>
         <a href="https://www.esolnetespana.es" target="_blank" rel="noopener noreferrer">
           <img className={style.thumb} src={EsolnetImage} alt="Esolnet Espana" />
+        </a>
+        <a href="https://artisto.netlify.com" target="_blank" rel="noopener noreferrer">
+          <img className={style.thumb} src={ArtistoImage} alt="Artisto" />
         </a>
       </div>
       <p>Complex solutions to setup an online store or an online membership site. Projects can be discussed on a one to one basis to determine project feasibility and possible costs.</p>
