@@ -21,15 +21,15 @@ const Software = () => {
       </div>
       <p>
         <strong>Technologies Used (Javascript Based): </strong>
-        <ul>
-          <li>ReactJS / React Native / Redux</li>
-          <li>Webpack / Babel</li>
-          <li>HTML5 / CSS3 / SCSS</li>
-          <li>NodeJS / ExpressJS / GraphQL</li>
-          <li>MongoDB / MySQL</li>
-          <li>Plus more.</li>
-        </ul>
       </p>
+      <ul>
+        <li>ReactJS / React Native / Redux</li>
+        <li>Webpack / Babel</li>
+        <li>HTML5 / CSS3 / SCSS</li>
+        <li>NodeJS / ExpressJS / GraphQL</li>
+        <li>MongoDB / MySQL</li>
+        <li>Plus more.</li>
+      </ul>
       <p><strong>Contact us for further details and pricing.</strong></p>
     </div>
   );
