@@ -13,6 +13,16 @@ i:hover {
   color: white;
 }
 
+img {
+  height: 100px;
+  border: 2px solid rgb(98, 216, 112);
+  border-radius: 10px;
+}
+
+img:hover {
+  border-color: white;
+}
+
 hr {
   border-color: rgb(98, 216, 112);
 }
@@ -22,12 +32,18 @@ h5 {
   flex-flow: column;
 }
 
+p {
+  text-align: left;
+}
+
 .content {
   text-align: center;
 }
 
-p {
-  text-align: left;
+.projects {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 800px) {
