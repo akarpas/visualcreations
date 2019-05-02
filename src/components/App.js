@@ -10,6 +10,9 @@ const App = () => {
   const [isBurgerOn, setIsBurgerOn] = useState(false);
 
   const toggleMenu = () => {
+    if (isBurgerOn) {
+      window.scrollTo(0,0)
+    }
     setIsBurgerOn(!isBurgerOn);
   }
 
@@ -19,9 +22,7 @@ const App = () => {
         <h1 className={style.headerTitle}>Digitations</h1>
         <div className={style.menu}>
           <button onClick={toggleMenu}>
-            {isBurgerOn
-              ? <i id="menu" className="material-icons">close</i>
-              : <i id="menu" className="material-icons">menu</i>}
+            <i id="menu" className="material-icons">menu</i>
           </button>
         </div>
       </header>
@@ -31,7 +32,7 @@ const App = () => {
           <Route exact path="/web" component={Web} />
         </Switch>
       </div>
-      {isBurgerOn && <BurgerMenu />}
+      {isBurgerOn && <BurgerMenu toggleMenu={toggleMenu} />}
     </div>
   )
 };

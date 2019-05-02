@@ -1,11 +1,44 @@
+a {
+  color: rgb(98, 216, 112);
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0.75rem 0;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .overlay {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   background-color: black;
   color: white;
-  height: 100vh;
+  height: calc(100vh - 120px);
   left: 0;
   padding: 120px 5vw 0 5vw;
   position: fixed;
   top: 0;
   width: 90vw;
-  z-index: 99;
+  z-index: 101;
+}
+
+.menu {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+
+.close {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5vh 5vw 0 0;
 }
