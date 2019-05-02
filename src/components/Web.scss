@@ -13,16 +13,6 @@ i:hover {
   color: white;
 }
 
-img {
-  height: 100px;
-  border: 2px solid rgb(98, 216, 112);
-  border-radius: 10px;
-}
-
-img:hover {
-  border-color: white;
-}
-
 hr {
   border-color: rgb(98, 216, 112);
 }
@@ -38,6 +28,16 @@ p {
 
 .content {
   text-align: center;
+}
+
+.thumb {
+  height: 100px;
+  border: 2px solid rgb(98, 216, 112);
+  border-radius: 10px;
+}
+
+.thumb:hover {
+  border-color: white;
 }
 
 .projects {
