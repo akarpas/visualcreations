@@ -33,6 +33,7 @@ a:hover {
 }
 
 .close {
+  cursor: pointer;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
