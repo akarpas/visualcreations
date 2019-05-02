@@ -35,7 +35,7 @@ const Home = () => {
         </h5>
       </div>
       <img className={style.icon} src={AddIcon} alt="+" />
-      <p>Network of Professionals for different needs</p>
+      <p style={{ textAlign: 'center' }}>Network of Professionals for different needs</p>
     </div>
   );
 };
