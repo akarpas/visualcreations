@@ -1,0 +1,33 @@
+button {
+  outline: none;
+  background-color: transparent;
+  border-style: none;
+  color: rgb(98, 216, 112);
+}
+
+i {
+  color: rgb(98, 216, 112);
+}
+
+i:hover {
+  color: white;
+}
+
+hr {
+  border-color: rgb(98, 216, 112);
+}
+
+h5 {
+  display: flex;
+  flex-flow: column;
+}
+
+.content {
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
