@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className={style.wrapper}>
       <header className={style.header}>
-        <h1 className={style.headerTitle}>Visual Creations</h1>
+        <h1 className={style.headerTitle}>Digitations</h1>
         <div className={style.menu}>
           <button onClick={toggleMenu}>
             {isBurgerOn
