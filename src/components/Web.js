@@ -4,7 +4,7 @@ import EsolnetImage from '../images/web/jpeg/esolnet.jpg';
 import ArtistoImage from '../images/web/jpeg/artisto.jpg';
 import style from './Web.scss';
 
-const Home = () => {
+const Web = () => {
   return (
     <div className={style.content}>
       <h3>Website Creation</h3>
@@ -29,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Web;
