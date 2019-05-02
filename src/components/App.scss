@@ -4,8 +4,19 @@ body {
   color: white;
 }
 
+button {
+  outline: none;
+  background-color: transparent;
+  border-style: none;
+  color: white;
+}
+
 h1 {
   font-size: 1.5em; // 2em;
+}
+
+i {
+  font-size: 48px !important;
 }
 
 .wrapper {
@@ -19,6 +30,7 @@ h1 {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  align-items: center;
   color: white;
   width: 90vw;
   padding-left: 5vw;
@@ -27,4 +39,10 @@ h1 {
 
 .headerTitle {
   width: 50%;
+}
+
+.content {
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
