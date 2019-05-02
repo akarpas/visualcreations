@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import BurgerMenu from './BurgerMenu';
 import Home from './Home';
+import Web from './Web';
 
 import style from './App.scss';
 
@@ -27,6 +28,7 @@ const App = () => {
       <div className={style.content}>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/web" component={Web} />
         </Switch>
       </div>
       {isBurgerOn && <BurgerMenu />}
