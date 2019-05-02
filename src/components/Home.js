@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AddIcon from '../images/add_circle_outline.png';
 import style from './Home.scss';
 
 const Home = () => {
@@ -16,24 +17,25 @@ const Home = () => {
       <div className={style.services}>
         <h5>
           <Link to="/">
-            <i id="menu" className="material-icons">web</i>
+            <i className="material-icons">web</i>
           </Link>
           Websites
         </h5>
         <h5>
           <Link to="/">
-            <i id="menu" className="material-icons">computer</i>
+            <i className="material-icons">computer</i>
           </Link>
           Software
         </h5>
         <h5>
           <Link to="/">
-            <i id="menu" className="material-icons">camera</i>
+            <i className="material-icons">camera</i>
           </Link>
           Photos<br/>Videos
         </h5>
       </div>
-      <p>Plus a Network of Professionals to meet your different needs!</p>
+      <img className={style.icon} src={AddIcon} alt="+" />
+      <p>Network of Professionals for different needs</p>
     </div>
   );
 };
