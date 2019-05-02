@@ -22,7 +22,7 @@ module.exports = [
     loader: 'url-loader?limit=10000&mimetype=application/octet-stream',
   },
   {
-    test: /\.(jpe?g|pmg|gif|svg)$/i,
+    test: /\.(jpe?g|pmg|gif|svg|png)$/i,
     use: ['url-loader?limit=10000', 'img-loader'],
   },
   {
