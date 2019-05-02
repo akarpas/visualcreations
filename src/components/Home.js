@@ -16,7 +16,7 @@ const Home = () => {
       <hr />
       <div className={style.services}>
         <h5>
-          <Link to="/">
+          <Link to="/web">
             <i className="material-icons">web</i>
           </Link>
           Websites
