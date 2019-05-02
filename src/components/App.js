@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Switch, BrowserRouter, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import BurgerMenu from './BurgerMenu';
+import Home from './Home';
 
 import style from './App.scss';
 
@@ -24,7 +25,9 @@ const App = () => {
         </div>
       </header>
       <div className={style.content}>
-        <p>React / Redux Boilerplate with Webpack. ESLint setup and SCSS Support</p>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
       </div>
       {isBurgerOn && <BurgerMenu />}
     </div>
