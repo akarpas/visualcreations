@@ -8,9 +8,12 @@ const Software = () => {
     <div className={style.content}>
       <h3>Software Development</h3>
       <hr />
-      <p><strong>Web Applications: </strong>From simple web applications to expose your data with charts or tables, or to provide access to your services, or even simple games and learning solutions, the implementation of a REST API and other solutions, feel free to contact us.</p>
-      <p><strong>Mobile Applications: </strong>Solutions for mobile phones and mobile accessibility built on React Native.</p>
-      <p><strong>Assistance - Maintenance - Support: </strong>Services on a freelance basis to provide support on projects (frontend and backend)</p>
+      <h4 className={style.subtitle}>Web Applications: </h4>
+      <p>From simple web applications to expose your data with charts or tables, or to provide access to your services, or even simple games and learning solutions, the implementation of a REST API and other solutions, feel free to contact us.</p>
+      <h4 className={style.subtitle}>Mobile Applications: </h4>
+      <p>Solutions for mobile phones and mobile accessibility built on React Native.</p>
+      <h4 className={style.subtitle}>Assistance - Maintenance - Support: </h4>
+      <p>Services on a freelance basis to implement, maintain, fix or provide support on ongoing projects (frontend and backend)</p>
       <div className={style.projects}>
         <a href="https://marvel-game.netlify.com/" target="_blank" rel="noopener noreferrer">
           <img className={style.thumb} src={MarvelGameImage} alt="Marvel Memory Game" />

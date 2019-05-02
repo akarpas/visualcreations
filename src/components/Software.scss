@@ -34,6 +34,17 @@ ul {
   text-align: center;
 }
 
+
+.projects {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.subtitle {
+  text-align: left;
+}
+
 .thumb {
   cursor: pointer;
   height: 70px;
@@ -44,12 +55,6 @@ ul {
 
 .thumb:hover {
   border-color: white;
-}
-
-.projects {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
