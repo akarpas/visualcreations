@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import BurgerMenu from './BurgerMenu';
 import Home from './Home';
+import Software from './Software';
 import Web from './Web';
 
 import style from './App.scss';
@@ -30,6 +31,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/web" component={Web} />
+          <Route exact path="/software" component={Software} />
         </Switch>
       </div>
       {isBurgerOn && <BurgerMenu toggleMenu={toggleMenu} />}
