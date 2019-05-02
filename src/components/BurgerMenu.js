@@ -7,7 +7,7 @@ const BurgerMenu = () => {
     <div className={style.overlay}>
       Burger Menu
     </div>
-  )
-}
+  );
+};
 
 export default BurgerMenu;
