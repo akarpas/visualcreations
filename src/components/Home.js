@@ -22,7 +22,7 @@ const Home = () => {
           Websites
         </h5>
         <h5>
-          <Link to="/">
+          <Link to="/software">
             <i className="material-icons">computer</i>
           </Link>
           Software
