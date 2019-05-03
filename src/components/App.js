@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import BurgerMenu from './BurgerMenu';
 import Home from './Home';
 import Photography from './Photography';
@@ -26,6 +26,14 @@ const App = () => {
           <button onClick={toggleMenu} type="button">
             <i id="menu" className="material-icons">menu</i>
           </button>
+        </div>
+        <div className={style.menu}>
+          <Link className={style.link} to='/'>Home</Link>
+          <Link className={style.link} to='/web'>Websites</Link>
+          <Link className={style.link} to='/software'>Software</Link>
+          <Link className={style.link} to='/photography'>Photo/Video</Link>
+          <Link className={style.link} to='/about'>About</Link>
+          <Link className={style.link} to='/contact'>Contact</Link>
         </div>
       </header>
       <div className={style.content}>

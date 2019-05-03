@@ -22,11 +22,10 @@ i {
   font-size: 48px !important;
 }
 
-.wrapper {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+.content {
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .header {
@@ -46,10 +45,19 @@ i {
   width: 50%;
 }
 
-.content {
-  width: 90vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
+.link {
+  margin: 0 10px;
+}
+
+.menu {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 650px) {
@@ -61,5 +69,8 @@ i {
   }
   .burgerMenu {
     display: none;
+  }
+  .menu {
+    display: block;
   }
 }
