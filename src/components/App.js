@@ -23,7 +23,7 @@ const App = () => {
       <header className={style.header}>
         <h1 className={style.headerTitle}>Digitations</h1>
         <div className={style.menu}>
-          <button onClick={toggleMenu}>
+          <button onClick={toggleMenu} type="button">
             <i id="menu" className="material-icons">menu</i>
           </button>
         </div>
