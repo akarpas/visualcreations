@@ -31,9 +31,9 @@ const App = () => {
       <div className={style.content}>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/web" component={Web} />
-          <Route exact path="/software" component={Software} />
-          <Route exact path="/photography" component={Photography} />
+          <Route path="/web" component={Web} />
+          <Route path="/software" component={Software} />
+          <Route path="/photography" component={Photography} />
         </Switch>
       </div>
       {isBurgerOn && <BurgerMenu toggleMenu={toggleMenu} />}
