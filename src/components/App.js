@@ -22,7 +22,7 @@ const App = () => {
     <div className={style.wrapper}>
       <header className={style.header}>
         <h1 className={style.headerTitle}>Digitations</h1>
-        <div className={style.menu}>
+        <div className={style.burgerMenu}>
           <button onClick={toggleMenu} type="button">
             <i id="menu" className="material-icons">menu</i>
           </button>
