@@ -1,25 +1,6 @@
 import React from 'react';
 import Modal from './Modal';
 import { Link, Route } from 'react-router-dom';
-// import BoudoirImage2 from '../images/photography/boudoir/image2.jpg';
-// import BoudoirImage4 from '../images/photography/boudoir/image4.jpg';
-// import BoudoirImage5 from '../images/photography/boudoir/image5.jpg';
-// import BoudoirImage7 from '../images/photography/boudoir/image7.jpg';
-// import BoudoirImage8 from '../images/photography/boudoir/image8.jpg';
-// import BoudoirImage9 from '../images/photography/boudoir/image9.jpg';
-// import BoudoirImage12 from '../images/photography/boudoir/image12.jpg';
-// import BoudoirImage13 from '../images/photography/boudoir/image13.jpg';
-// import BoudoirImage14 from '../images/photography/boudoir/image14.jpg';
-// import BoudoirImage16 from '../images/photography/boudoir/image16.jpg';
-// import FashionImage1 from '../images/photography/fashion/image1.jpg';
-// import FashionImage2 from '../images/photography/fashion/image2.jpg';
-// import FashionImage3 from '../images/photography/fashion/image3.jpg';
-// import FashionImage4 from '../images/photography/fashion/image4.jpg';
-// import FashionImage5 from '../images/photography/fashion/image5.jpg';
-// import FashionImage6 from '../images/photography/fashion/image6.jpg';
-// import FashionImage7 from '../images/photography/fashion/image7.jpg';
-// import FashionImage8 from '../images/photography/fashion/image8.jpg';
-// import FashionImage9 from '../images/photography/fashion/image9.jpg';
 
 import style from './Photography.scss';
 
