@@ -13,10 +13,10 @@ const App = () => {
 
   const toggleMenu = () => {
     if (isBurgerOn) {
-      window.scrollTo(0,0)
+      window.scrollTo(0,0);
     }
     setIsBurgerOn(!isBurgerOn);
-  }
+  };
 
   return (
     <div className={style.wrapper}>
@@ -44,9 +44,9 @@ const App = () => {
           <Route path="/photography" component={Photography} />
         </Switch>
       </div>
-      {isBurgerOn && <BurgerMenu toggleMenu={toggleMenu} />}
+      <BurgerMenu showMenu={isBurgerOn} toggleMenu={toggleMenu} />
     </div>
-  )
+  );
 };
 
 export default App;
