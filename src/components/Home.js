@@ -28,7 +28,7 @@ const Home = () => {
           Software
         </h5>
         <h5>
-          <Link to="/">
+          <Link to="/photography">
             <i className="material-icons">camera</i>
           </Link>
           Photos<br/>Videos
