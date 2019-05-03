@@ -49,24 +49,24 @@ ul {
 .thumb {
   cursor: pointer;
   height: 70px;
-  // border: 2px solid rgb(98, 216, 112);
-  // border-radius: 10px;
   margin: 5px 5px;
   object-fit: cover;
-  width: 50px;
-  height: 40px;
+  width: 51px;
 }
 
 .thumb:hover {
   border-color: white;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
   hr {
     width: 10%;
   }
+  .link {
+    width: 24%;
+  }
   .thumb {
-    height: 110px;
-    width: 60px;
+    height: 100px;
+    width: 97.5%;
   }
 }
