@@ -1,4 +1,6 @@
 import React from 'react';
+import Modal from './Modal';
+import { Link, Route } from 'react-router-dom';
 // import BoudoirImage2 from '../images/photography/boudoir/image2.jpg';
 // import BoudoirImage4 from '../images/photography/boudoir/image4.jpg';
 // import BoudoirImage5 from '../images/photography/boudoir/image5.jpg';
@@ -34,7 +36,11 @@ const Photography = () => {
       <div className={style.projects}>
         {fashionImages.map(image => {
           const fashionImage = require(`../images/photography/fashion/thumb${image}.jpg`);
-          return <img key={`thumbFashion${image}`} className={style.thumb} src={fashionImage} alt="Fashion" />
+          return (
+            <Link key={`thumbFashionLink${image}`} to={{ pathname: `photography/image/fashion/${image}`, query: String(image) }}>
+              <img key={`thumbFashion${image}`} className={style.thumb} src={fashionImage} alt="Fashion" />
+            </Link>
+          )
         })}
       </div>
       <h4 className={style.subtitle}>High End Boudoir Photoshoot : </h4>
@@ -42,7 +48,11 @@ const Photography = () => {
       <div className={style.projects}>
         {boudoirImages.map(image => {
           const boudoirImage = require(`../images/photography/boudoir/thumb${image}.jpg`);
-          return <img key={`thumbBoudoir${image}`} className={style.thumb} src={boudoirImage} alt="Boudoir" />
+          return (
+            <Link key={`thumbBoudoirLink${image}`} to={{ pathname: `photography/image/boudoir/${image}`, query: String(image) }}>
+              <img key={`thumbBoudoir${image}`} className={style.thumb} src={boudoirImage} alt="Boudoir" />
+            </Link>
+          )
         })}
       </div>
       <h4 className={style.subtitle}>Portraits and/or Headshots: </h4>
@@ -58,6 +68,8 @@ const Photography = () => {
       <h4 className={style.subtitle}>Videos: </h4>
       <p>We can arrange short videos to use on your Social Media account to promote your store, cafe, bar or even yourself. Just get in touch and we can discuss the details.</p>
       <p><strong>Contact us for further details and pricing.</strong></p>
+      <Route exact path="/photography/image/fashion/:id" component={Modal} />
+      <Route exact path="/photography/image/boudoir/:id" component={Modal} />
     </div>
   );
 };
