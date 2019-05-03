@@ -7,6 +7,8 @@ import style from './Photography.scss';
 const Photography = () => {
   const fashionImages = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const boudoirImages = [2, 4, 7, 8, 9, 12, 13, 14, 16];
+  const productImages = [1, 2, 3];
+  const retouchingImages = [1, 2, 3];
 
   return (
     <div className={style.content}>
@@ -41,16 +43,36 @@ const Photography = () => {
       <h4 className={style.subtitle}>Product Photography: </h4>
       <p>Need some professional photographs of your products in order to display them on your website or show them off in a magazine or on your store's instagram account? Get in touch!</p>
       <div className={style.projects}>
+        {productImages.map(image => {
+          const productImage = require(`../images/photography/product/thumb${image}.jpg`);
+          return (
+            <Link key={`thumbProductLink${image}`} to={{ pathname: `photography/image/product/${image}`, query: String(image) }}>
+              <img key={`thumbProduct${image}`} className={style.thumb} src={productImage} alt="Product" />
+            </Link>
+          )
+        })}
       </div>
       <h4 className={style.subtitle}>Events: </h4>
       <p>Corporate Events, Seminars or Parties. Let us know and will see how we can accomodate depending on location.</p>
       <h4 className={style.subtitle}>Retouching: </h4>
       <p>We will help you take care of photographs in need of saving. Colour correction, skin retouching, removal of unwanted objects and more.</p>
+      <div className={style.projects}>
+        {retouchingImages.map(image => {
+          const retouchingImage = require(`../images/photography/retouching/thumb${image}.jpg`);
+          return (
+            <Link key={`thumbRetouchingLink${image}`} to={{ pathname: `photography/image/retouching/${image}`, query: String(image) }}>
+              <img key={`thumbRetouching${image}`} className={style.thumb} src={retouchingImage} alt="Retouching" />
+            </Link>
+          )
+        })}
+      </div>
       <h4 className={style.subtitle}>Videos: </h4>
       <p>We can arrange short videos to use on your Social Media account to promote your store, cafe, bar or even yourself. Just get in touch and we can discuss the details.</p>
       <p><strong>Contact us for further details and pricing.</strong></p>
       <Route exact path="/photography/image/fashion/:id" component={Modal} />
       <Route exact path="/photography/image/boudoir/:id" component={Modal} />
+      <Route exact path="/photography/image/product/:id" component={Modal} />
+      <Route exact path="/photography/image/retouching/:id" component={Modal} />
     </div>
   );
 };
