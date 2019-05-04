@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 import style from './Software.scss';
 
-const Software = () => {
+const About = () => {
   return (
     <div className={style.content}>
       <h3>About</h3>
@@ -17,4 +17,4 @@ const Software = () => {
   );
 };
 
-export default Software;
+export default About;
