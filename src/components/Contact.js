@@ -9,8 +9,8 @@ const Contact = () => {
       <h3>Contact</h3>
       <hr />
       <Fade>
-        <p>info@digitations.es</p>
-        <p>+34-671217767</p>
+        <h4>info@digitations.es</h4>
+        <h4>+34-671217767</h4>
       </Fade>
     </div>
   );
