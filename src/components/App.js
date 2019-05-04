@@ -4,6 +4,7 @@ import BurgerMenu from './BurgerMenu';
 import Home from './Home';
 import Photography from './Photography';
 import Software from './Software';
+import About from './About';
 import Web from './Web';
 
 import style from './App.scss';
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/web" component={Web} />
           <Route path="/software" component={Software} />
           <Route path="/photography" component={Photography} />
+          <Route path="/about" component={About} />
         </Switch>
       </div>
       <BurgerMenu showMenu={isBurgerOn} toggleMenu={toggleMenu} />
