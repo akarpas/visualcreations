@@ -7,6 +7,7 @@ import Home from './Home';
 import Photography from './Photography';
 import Software from './Software';
 import Web from './Web';
+import InstagramLogo from '../images/instagram.png';
 
 import style from './App.scss';
 
@@ -36,6 +37,9 @@ const App = () => {
           <Link className={style.link} to='/photography'>Photo/Video</Link>
           <Link className={style.link} to='/about'>About</Link>
           <Link className={style.link} to='/contact'>Contact</Link>
+          <a className={style.instagram} href="https://www.instagram.com/karpasitis.photography" target="_blank" rel="noopener noreferrer">
+            <img className={style.instagram} src={InstagramLogo} alt="Instagram" />
+          </a>
         </div>
       </header>
       <div className={style.content}>

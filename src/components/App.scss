@@ -45,6 +45,10 @@ i {
   width: 50%;
 }
 
+.instagram {
+  height: 23px;
+}
+
 .link {
   margin: 0 10px;
 }
@@ -83,6 +87,9 @@ i {
     display: none;
   }
   .menu {
-    display: block;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
   }
 }
