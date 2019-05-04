@@ -10,6 +10,29 @@ a:hover {
   text-decoration: none;
 }
 
+.close {
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 13px 5vw 0 0;
+}
+
+.instagram {
+  height: 45px;
+}
+
+.menu {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+
 .overlay {
   display: flex;
   flex-flow: column;
@@ -23,25 +46,6 @@ a:hover {
   top: 0;
   width: 90vw;
   z-index: 101;
-}
-
-.menu {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  width: 100%;
-}
-
-.close {
-  cursor: pointer;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 13px 5vw 0 0;
 }
 
 @media screen and (min-width: 650px) {
