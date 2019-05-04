@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import BurgerMenu from './BurgerMenu';
+import About from './About';
+import Contact from './Contact';
 import Home from './Home';
 import Photography from './Photography';
 import Software from './Software';
-import About from './About';
 import Web from './Web';
 
 import style from './App.scss';
@@ -44,6 +45,7 @@ const App = () => {
           <Route path="/software" component={Software} />
           <Route path="/photography" component={Photography} />
           <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </div>
       <BurgerMenu showMenu={isBurgerOn} toggleMenu={toggleMenu} />
