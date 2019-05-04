@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Flip from 'react-reveal/Flip';
 
-
 import style from './BurgerMenu.scss';
 
 const BurgerMenu = props => {
@@ -10,7 +9,7 @@ const BurgerMenu = props => {
 
   return (
     <Flip left duration={750} when={showMenu}>
-      <div className={style.overlay}>
+      <div className={style.overlay} style={{ display: showMenu ? 'block' : 'none' }}>
         <div className={style.menu}>
           <div className={style.close}>
             <button onClick={toggleMenu} type="button">
