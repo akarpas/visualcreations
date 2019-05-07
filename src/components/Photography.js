@@ -91,6 +91,10 @@ const Photography = () => {
         </div>
       </Zoom>
       <Fade>
+        <h4 className={style.subtitle}>Architecture & Locations: </h4>
+        <p>From stores, bars, restaurants to real estate properties, we will provide what you require to promote your business and/or property.</p>
+      </Fade>
+      <Fade>
         <h4 className={style.subtitle}>Videos: </h4>
         <p>We can arrange short videos to use on your Social Media account to promote your store, cafe, bar or even yourself. Just get in touch and we can discuss the details.</p>
         <p><strong>Contact us for further details and pricing.</strong></p>
