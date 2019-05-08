@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Flip from 'react-reveal/Flip';
-import InstagramLogo from '../images/instagram.png';
+// import InstagramLogo from '../images/instagram.png';
 import Logo from '../images/logo.png'
 
 import style from './BurgerMenu.scss';
+
+// <a className={style.instagram} href="https://www.instagram.com/karpasitis.photography" target="_blank" rel="noopener noreferrer">
+// <img className={style.instagram} src={InstagramLogo} alt="Instagram" />
+// </a>
 
 const BurgerMenu = props => {
   const { showMenu, toggleMenu } = props; // eslint-disable-line
@@ -25,9 +29,6 @@ const BurgerMenu = props => {
           <Link onClick={toggleMenu} to="/photography">Photo/Video</Link>
           <Link onClick={toggleMenu} to="/about">About</Link>
           <Link onClick={toggleMenu} to="/contact">Contact</Link>
-          <a className={style.instagram} href="https://www.instagram.com/karpasitis.photography" target="_blank" rel="noopener noreferrer">
-            <img className={style.instagram} src={InstagramLogo} alt="Instagram" />
-          </a>
         </div>
       </div>
     </Flip>
