@@ -64,6 +64,18 @@ i {
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .burgerMenu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 650px) {
   button:hover {
     color: white;
@@ -82,14 +94,5 @@ i {
   }
   .content {
     width: 60vw;
-  }
-  .burgerMenu {
-    display: none;
-  }
-  .menu {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
   }
 }
