@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './favicon.ico';
 
 // NOTE: Replace BrowserRouter with HashRouter if you want to test
@@ -12,10 +12,10 @@ import store from './store';
 import App from './components/App';
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <Provider store={store}>
       <App />
     </Provider>
-  </HashRouter>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
