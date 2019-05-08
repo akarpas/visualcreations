@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Flip from 'react-reveal/Flip';
 import InstagramLogo from '../images/instagram.png';
+import Logo from '../images/logo.png'
 
 import style from './BurgerMenu.scss';
 
@@ -12,6 +13,7 @@ const BurgerMenu = props => {
     <Flip left duration={750} when={showMenu}>
       <div className={style.overlay} style={{ display: showMenu ? 'block' : 'none' }}>
         <div className={style.menu}>
+          <img className={style.logo} src={Logo} alt="D." />
           <div className={style.close}>
             <button onClick={toggleMenu} type="button">
               <i id="menu" className="material-icons">close</i>
