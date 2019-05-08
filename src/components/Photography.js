@@ -27,9 +27,9 @@ const Photography = () => {
           {fashionImages.map(image => {
             const fashionImage = require(`../images/photography/fashion/thumb${image}.jpg`); // eslint-disable-line
             return (
-                <Link className={style.link} key={`thumbFashionLink${image}`} to={{ pathname: `photography/image/fashion/${image}`, query: String(image) }}>
-                  <img key={`thumbFashion${image}`} className={style.thumb} src={fashionImage} alt="Fashion" />
-                </Link>
+              <Link className={style.link} key={`thumbFashionLink${image}`} to={{ pathname: `photography/image/fashion/${image}`, query: String(image) }}>
+                <img key={`thumbFashion${image}`} className={style.thumb} src={fashionImage} alt="Fashion" />
+              </Link>
             )
           })}
         </div>
@@ -43,9 +43,9 @@ const Photography = () => {
           {boudoirImages.map(image => {
             const boudoirImage = require(`../images/photography/boudoir/thumb${image}.jpg`); // eslint-disable-line
             return (
-                <Link className={style.link} key={`thumbBoudoirLink${image}`} to={{ pathname: `photography/image/boudoir/${image}`, query: String(image) }}>
-                  <img key={`thumbBoudoir${image}`} className={style.thumb} src={boudoirImage} alt="Boudoir" />
-                </Link>
+              <Link className={style.link} key={`thumbBoudoirLink${image}`} to={{ pathname: `photography/image/boudoir/${image}`, query: String(image) }}>
+                <img key={`thumbBoudoir${image}`} className={style.thumb} src={boudoirImage} alt="Boudoir" />
+              </Link>
             )
           })}
         </div>
@@ -63,9 +63,9 @@ const Photography = () => {
           {productImages.map(image => {
             const productImage = require(`../images/photography/product/thumb${image}.jpg`); // eslint-disable-line
             return (
-                <Link className={style.link} key={`thumbProductLink${image}`} to={{ pathname: `photography/image/product/${image}`, query: String(image) }}>
-                  <img key={`thumbProduct${image}`} className={style.thumb} src={productImage} alt="Product" />
-                </Link>
+              <Link className={style.link} key={`thumbProductLink${image}`} to={{ pathname: `photography/image/product/${image}`, query: String(image) }}>
+                <img key={`thumbProduct${image}`} className={style.thumb} src={productImage} alt="Product" />
+              </Link>
             )
           })}
         </div>
@@ -83,9 +83,9 @@ const Photography = () => {
           {retouchingImages.map(image => {
             const retouchingImage = require(`../images/photography/retouching/thumb${image}.jpg`); // eslint-disable-line
             return (
-                <Link className={style.link} key={`thumbRetouchingLink${image}`} to={{ pathname: `photography/image/retouching/${image}`, query: String(image) }}>
-                  <img key={`thumbRetouching${image}`} className={style.thumb} src={retouchingImage} alt="Retouching" />
-                </Link>
+              <Link className={style.link} key={`thumbRetouchingLink${image}`} to={{ pathname: `photography/image/retouching/${image}`, query: String(image) }}>
+                <img key={`thumbRetouching${image}`} className={style.thumb} src={retouchingImage} alt="Retouching" />
+              </Link>
             )
           })}
         </div>
