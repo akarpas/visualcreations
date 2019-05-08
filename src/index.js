@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+// NOTE: Replace BrowserRouter with HashRouter if you want to test
+// production build locally
 
 import store from './store';
 
