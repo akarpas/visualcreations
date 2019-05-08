@@ -29,10 +29,6 @@ module.exports = [
     test: /\.(ico)$/i,
     use: ['url-loader?limit=10000', 'img-loader', 'file-loader?name=[name].[ext]'],
   },
-  // {
-  //   test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
-  //   loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
-  // },
   {
     test: /\.s(a|c)ss$/,
     use: [
