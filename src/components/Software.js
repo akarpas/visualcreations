@@ -1,8 +1,8 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import MarvelGameImage from '../images/software/marvel.png';
-import MoviesAppImage from '../images/software/movies.png';
+import MarvelGameImage from '../images/software/marvel.jpg';
+import MoviesAppImage from '../images/software/movies.jpg';
 import style from './Software.scss';
 
 const Software = () => {
