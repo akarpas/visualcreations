@@ -8,7 +8,7 @@ const Modal = props => {
   const { goBack } = history;
   const { pathname, query } = location;
   const type = pathname.split('/')[3];
-  const image = query ? `thumb${query}` : `thumb${pathname.split('/')[4]}`;
+  const image = query ? `image${query}` : `image${pathname.split('/')[4]}`;
   const imageSource = require(`../images/photography/${type}/${image}.jpg`) // eslint-disable-line
   return (
     <Zoom duration={250}>
