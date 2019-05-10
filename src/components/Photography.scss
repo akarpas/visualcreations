@@ -1,0 +1,72 @@
+button {
+  outline: none;
+  background-color: transparent;
+  border-style: none;
+  color: rgb(98, 216, 112);
+}
+
+i {
+  color: rgb(98, 216, 112);
+}
+
+i:hover {
+  color: white;
+}
+
+hr {
+  border-color: rgb(98, 216, 112);
+}
+
+h5 {
+  display: flex;
+  flex-flow: column;
+}
+
+p {
+  text-align: left;
+}
+
+ul {
+  text-align: left;
+}
+
+.content {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  max-width: 90vw;
+  flex-wrap: wrap;
+}
+
+.subtitle {
+  text-align: left;
+}
+
+.thumb {
+  cursor: pointer;
+  height: 70px;
+  margin: 5px 5px;
+  object-fit: cover;
+  width: 51px;
+}
+
+.thumb:hover {
+  border-color: white;
+}
+
+@media screen and (min-width: 650px) {
+  hr {
+    width: 10%;
+  }
+  .link {
+    width: 24%;
+  }
+  .thumb {
+    height: 100px;
+    width: 97.5%;
+  }
+}

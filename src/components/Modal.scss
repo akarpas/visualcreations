@@ -1,0 +1,27 @@
+.back {
+  outline: none;
+  background-color: transparent;
+  border-style: none;
+  color: rgb(98, 216, 112);
+  font-size: 1.5rem;
+}
+
+.overlay {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.95);
+  color: white;
+  height: calc(100vh - 4vh);
+  left: 0;
+  padding: 4vh 5vw 0 5vw;
+  position: fixed;
+  top: 0;
+  width: 90vw;
+  z-index: 101;
+}
+
+.photo {
+  max-height: 80%;
+}
