@@ -18,7 +18,7 @@ const Modal = props => {
   const onLoad = () => {
     const imageSource = require(`../images/photography/${type}/${image}.jpg`); // eslint-disable-line
     setFinalImage(imageSource);
-  }
+  };
 
   return (
     <Zoom duration={250}>
