@@ -6,6 +6,18 @@
   font-size: 1.5rem;
 }
 
+.loading {
+  color: rgb(98, 216, 112);
+  animation: blink 1s linear infinite alternate;
+  padding: 1px;
+}
+
+@keyframes blink{
+  0%{opacity: 0.3;}
+  50%{opacity: 0.6;}
+  100%{opacity: 1;}
+}
+
 .overlay {
   display: flex;
   flex-flow: column;
