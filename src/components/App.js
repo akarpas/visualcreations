@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
+import Slide from 'react-reveal/Slide';
 import BurgerMenu from './BurgerMenu';
 import About from './About';
 import Contact from './Contact';
@@ -27,7 +28,9 @@ const App = () => {
   return (
     <div className={style.wrapper}>
       <header className={style.header}>
-        <h1 className={style.headerTitle}>Digitations</h1>
+        <Slide left>
+          <h1 className={style.headerTitle}>Digitations</h1>
+        </Slide>
         <div className={style.burgerMenu}>
           <button onClick={toggleMenu} type="button">
             <i id="menu" className="material-icons">menu</i>
