@@ -38,11 +38,6 @@ a:hover {
   height: 45px;
 }
 
-// .logo {
-//   height: 100px;
-//   margin-bottom: 20px;
-// }
-
 .menu {
   display: flex;
   flex-flow: column;
@@ -65,8 +60,33 @@ a:hover {
   z-index: 101;
 }
 
+.sectionOne {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.sectionTwo {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 650px) {
   a {
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .menu {
+    flex-flow: row;
+  }
+  .sectionOne {
+    width: 50%;
+    border-right: 1px dashed rgb(98, 216, 112);
+  }
+  .sectionTwo {
+    width: 50%;
   }
 }
