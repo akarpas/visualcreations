@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Zoom from 'react-reveal/Zoom';
+import BounceLoader from 'react-spinners/BounceLoader';
 
 import style from './Modal.scss';
 
@@ -22,9 +23,16 @@ const Modal = props => {
   return (
     <Zoom duration={250}>
       <div className={style.overlay}>
-        {!finalImage && <div className={style.loading}>Rendering</div>}
         <img style={{ display: "none" }} onLoad={onLoad} className={style.photo} src={imageSource} alt={image} />
-        <img className={style.photo} src={finalImage || imageSourceThumb} alt={image} />
+        <div className={style.wrapper}>
+          <img className={style.photo} src={finalImage || imageSourceThumb} alt={image} />
+          {!finalImage
+            && (
+              <div className={style.loading}>
+                <BounceLoader color='rgb(98, 216, 112)' />
+              </div>
+            )}
+        </div>
         <button type="button" className={style.back} onClick={goBack}>
           Back
         </button>
