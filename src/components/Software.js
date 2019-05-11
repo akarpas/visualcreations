@@ -1,6 +1,5 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 import MarvelGameImage from '../images/software/marvel.jpg';
 import MoviesAppImage from '../images/software/movies.jpg';
 import style from './Software.scss';
@@ -22,7 +21,7 @@ const Software = () => {
         <h4 className={style.subtitle}>Assistance - Maintenance - Support: </h4>
         <p>Services on a freelance basis to implement, maintain, fix or provide support on ongoing projects (frontend and backend)</p>
       </Fade>
-      <Zoom delay={500}>
+      <Fade delay={500}>
         <div className={style.projects}>
           <a href="https://marvel-game.netlify.com/" target="_blank" rel="noopener noreferrer">
             <img className={style.thumb} src={MarvelGameImage} alt="Marvel Memory Game" />
@@ -31,7 +30,7 @@ const Software = () => {
             <img className={style.thumb} src={MoviesAppImage} alt="Movies Spy" />
           </a>
         </div>
-      </Zoom>
+      </Fade>
       <Fade>
         <p>
           <strong>Technologies Used (Javascript Based): </strong>
