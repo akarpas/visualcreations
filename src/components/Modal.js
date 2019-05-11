@@ -22,6 +22,7 @@ const Modal = props => {
   return (
     <Zoom duration={250}>
       <div className={style.overlay}>
+        {!finalImage && <div className={style.loading}>Rendering</div>}
         <img style={{ display: "none" }} onLoad={onLoad} className={style.photo} src={imageSource} alt={image} />
         <img className={style.photo} src={finalImage || imageSourceThumb} alt={image} />
         <button type="button" className={style.back} onClick={goBack}>
