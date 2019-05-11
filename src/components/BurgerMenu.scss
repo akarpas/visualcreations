@@ -89,4 +89,12 @@ a:hover {
   .sectionTwo {
     width: 50%;
   }
+  .overlay {
+    padding: 95px 5vw 0 5vw;
+    height: calc(100vh - 95px);
+  }
+  a {
+    margin: 0.5rem 0;
+    font-size: 1.85rem;
+  }
 }
