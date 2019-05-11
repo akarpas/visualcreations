@@ -40,7 +40,7 @@ const App = () => {
           <Link className={style.link} to='/'>Home</Link>
           <Link className={style.link} to='/web'>Websites</Link>
           <Link className={style.link} to='/software'>Software</Link>
-          <Link className={style.link} to='/photography'>Photo/Video</Link>
+          <Link className={style.link} to='/photography'>Photo & Video</Link>
           <Link className={style.link} to='/about'>About</Link>
           <Link className={style.link} to='/contact'>Contact</Link>
         </div>
