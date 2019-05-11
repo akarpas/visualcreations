@@ -26,7 +26,7 @@ const Software = () => {
           <a href="https://marvel-game.netlify.com/" target="_blank" rel="noopener noreferrer">
             <img className={style.thumb} src={MarvelGameImage} alt="Marvel Memory Game" />
           </a>
-          <a href="https://marvel-game.netlify.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://moviespy.netlify.com/" target="_blank" rel="noopener noreferrer">
             <img className={style.thumb} src={MoviesAppImage} alt="Movies Spy" />
           </a>
         </div>
