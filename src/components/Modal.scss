@@ -57,19 +57,17 @@
 }
 
 .photo {
-  height: auto;
-  max-height: auto;
-  min-height: auto;
+  height: none;
+  max-height: none;
+  min-height: none;
   max-width: 70vw;
-  min-width: 70vw;
 }
 
 @media screen and (min-width: 650px) {
   .photo {
-    width: auto;
-    max-width: auto;
-    min-width: auto;
+    width: none;
+    max-width: none;
+    min-width: none;
     max-height: 75vh;
-    min-height: 75vh;
   }
 }
