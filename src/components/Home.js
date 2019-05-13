@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className={style.content}>
       <Fade>
-        <h2>We. Create.</h2>
+        <h2>Digital Creations</h2>
         <hr />
         <h4>Bringing Digital products to life.</h4>
         <h4>Tailored to your needs.</h4>
