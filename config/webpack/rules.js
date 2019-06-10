@@ -14,20 +14,30 @@ module.exports = [
   {
     test: /\.(woff|woff2)$/,
     exclude: /node_modules/,
-    loader: 'url-loader?prefix=font/&limit=5000',
+    use: [
+      { loader: 'url-loader', options: { prefix: 'font', limit: 10000 }},
+    ],
   },
   {
     test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
     exclude: /node_modules/,
-    loader: 'url-loader?limit=10000&mimetype=application/octet-stream',
+    use: [
+      { loader: 'url-loader', options: { limit: 10000 }}
+    ]
   },
   {
     test: /\.(jpe?g|pmg|gif|svg|png)$/i,
-    use: ['url-loader?limit=10000', 'img-loader'],
+    use: [
+      { loader: 'url-loader', options: { limit: 10000 }},
+      'img-loader'
+    ],
   },
   {
     test: /\.(ico)$/i,
-    use: ['url-loader?limit=10000', 'img-loader', 'file-loader?name=[name].[ext]'],
+    use: [
+      { loader: 'url-loader', options: { limit: 10000 }},
+      'img-loader'
+    ],
   },
   {
     test: /\.s(a|c)ss$/,
